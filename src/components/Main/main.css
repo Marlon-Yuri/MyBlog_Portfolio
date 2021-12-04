@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+.Title{
+    white-space: nowrap; 
+    overflow:hidden;
+    animation: blink 600ms steps(37) infinite normal, type 4s steps(29) 1.2s normal;
+}
+
+@keyframes blink {
+    from{
+        border-right-color: rgba(255,255,255, .75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes type {
+    from{
+        width: 0;
+    }
+    to{
+        width:35%;
+    }
+}
+.console{
+    animation: joystick 2s;
+}
+@keyframes joystick {
+    from {
+        transform: translateX(90px);
+      }
+      to {
+        transform: translateX(0);
+      }
+}
+h2{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
