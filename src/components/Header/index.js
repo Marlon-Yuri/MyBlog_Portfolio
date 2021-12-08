@@ -37,26 +37,19 @@ export function Header(){
     const {logo, insta, git, face } = data.alldata.headers[0]
     return(
       <div>
-        <S.Container>
-         
+        <S.Container>       
           <S.Logo>
            <S.Arrow className="arrow" src={logo.url}/>
-          </S.Logo>
-           
+          </S.Logo>         
           <S.BoxIcon>
-         <StyledLink to='/About'><S.Item> About me</S.Item> </StyledLink> 
-         
-         <S.Item>Music</S.Item>
+         <StyledLink to='/About'><S.Item> About me</S.Item> </StyledLink>         
+         <StyledLink to='/Gallery' > <S.Item>Gallery</S.Item> </StyledLink>
          <StyledLink to='/Work' > <S.Item>Work</S.Item> </StyledLink>
           <S.Insta src={insta.url}/>
           <S.Image src={git.url}/>
           <S.Image src={face.url}/>
-          </S.BoxIcon>
-
-          
-          
-        </S.Container>
-       
+          </S.BoxIcon>         
+        </S.Container>      
       </div>
     )
 }

@@ -39,7 +39,7 @@ export const Item = styled.h2`
 color:black;
 &:hover{
     cursor:pointer;
-    color:white;
+    color:#4682B4;
     font-size:1.6vw;
 }
 

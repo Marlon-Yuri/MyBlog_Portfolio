@@ -51,7 +51,7 @@ top:93%;
 `
 const StyledLink= styled(Link)`
 text-decoration: none;
-color: red;  
+color: #FFE4B5;  
 font-weight:bolder;
 font-size:1.8vw;
 &:hover{
