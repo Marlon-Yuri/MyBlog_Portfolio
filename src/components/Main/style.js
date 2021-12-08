@@ -13,12 +13,16 @@ justify-content:center;
 align-items:center;
 
 `
-export const Selfie = styled.img`
+export const Selfie = styled.div`
 border:solid 7px #20B2AA ;
-width:27vw;
+width:31vw;
+height:62vh;
 border-radius:50%;
 position:absolute;
 left:4.2%;
+background-image: url(${props => props.back});
+background-size:cover;
+background-position-y:30%;
 top:17%;
 border-style: double;
  

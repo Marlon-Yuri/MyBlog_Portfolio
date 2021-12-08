@@ -27,7 +27,7 @@ export function Main(){
     return(
       <div>
         <S.Backg back={background.url}>
-          <S.Selfie src ={self.url} alt="I"/>
+          <S.Selfie back={self.url}></S.Selfie>
           <S.Box className='Title'>
           <h1>It's me, Marlon</h1>
           </S.Box> 
