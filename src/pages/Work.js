@@ -43,7 +43,7 @@ const Item = styled.div`
 width:10vw;
 height:5vh;
 position:absolute;
-left:84%;
+left:89%;
 display:flex;
 justify-content:center;
 align-items:center;

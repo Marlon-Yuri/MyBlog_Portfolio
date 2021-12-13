@@ -34,7 +34,7 @@ justify-content:space-evenly;
 flex-wrap:wrap;
 `
 const Img =styled.img`
-width:19vw;
+width:20vw;
 height:37vh;
 &:hover{
   border:solid black;

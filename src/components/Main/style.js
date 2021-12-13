@@ -25,7 +25,21 @@ background-size:cover;
 background-position-y:30%;
 top:17%;
 border-style: double;
- 
+
+  @media(max-width: 768px) {
+    position:absolute;
+    left:72%;
+    top:67%;
+    width:25vw;
+    height:25vh;
+}
+@media(max-width: 320px) {
+  position:absolute;
+  top:80%;
+  border:solid white;
+  width:27vw;
+  height:15vh;
+}
 `
 export const Box = styled.div`
 color:rgba(255, 255, 255, .75);
@@ -35,6 +49,15 @@ position:absolute;
 left:40%;
 top:30%;
 border-right:2px solid rgba(255, 255, 255, .75);
+@media(max-width: 768px) {
+  position:absolute;
+  left:15%;
+}
+@media(max-width: 320px) {
+  width:76vw;
+  font-size:5.5vw;
+
+}
  
 `
 export const Subtitle = styled.div`
@@ -44,6 +67,14 @@ left:40%;
 top:50%;
 width:35vw;
 font-style:italic;
+@media(max-width: 768px) {
+  position:absolute;
+  left:15%;
+  width:55vw;
+}
+@media(max-width: 320px) { 
+  font-size:4vw;
+}
 `
 export const Console = styled.img`
 position:absolute;
@@ -51,4 +82,8 @@ left:38%;
 top:80%;
 border-radius:50%;
 width:8vw;
+@media(max-width: 320px) { 
+  width:15vw;
+}
+
 `
