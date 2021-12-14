@@ -11,6 +11,11 @@ border:solid 2px black;
 background-image: url(${props => props.back});
 background-size:cover;
 background-position-y:54%;
+@media(max-width: 320px) {
+  background-position-y:10%;
+  height:40vh;
+
+}
 
 `
 const Backmain = styled.section`
@@ -20,6 +25,7 @@ background-image: url(${props => props.backgroundmain});
 background-size:cover;
 position:relative;
 background-position-y:66%;
+
 `
 const Img = styled.div`
 width:33vw;
@@ -32,6 +38,21 @@ border-radius:8%;
 background-image: url(${props => props.backselfie});
 background-size:cover;
 background-position-x:77%;
+@media(max-width: 1024px) {
+  width:30vw;
+  top:10%;
+  height:40vh;
+  border:solid 1px black;
+  border-radius:0%;
+  position:absolute;
+  left:10%
+  
+}
+@media(max-width: 320px) {
+  width:32vw;
+  height:20vh;
+  
+}
 `
 const Item = styled.div`
 width:10vw;
@@ -42,6 +63,12 @@ display:flex;
 justify-content:center;
 align-items:center;
 top:93%;
+@media(max-width: 320px) {
+  position:absolute;
+  top:10%;
+  
+  
+}
 `
 const StyledLink= styled(Link)`
 text-decoration: none;
@@ -51,6 +78,15 @@ font-size:1.6vw;
 &:hover{
   color:black;
   transform: rotate(360deg);
+  
+}
+@media(max-width: 320px) {
+  font-size:3vw;
+  &:hover{
+    color:black;
+  }
+  
+  
 }
 `
 export default function About(){

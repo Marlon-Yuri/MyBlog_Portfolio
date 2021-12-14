@@ -6,7 +6,6 @@ import styled from "styled-components"
 
 const Background =styled.section`
 width:100%;
-height:200vh;
 position:relative;
 display:flex;
 flex-direction:column;
@@ -14,6 +13,12 @@ align-items:center;
 background-image: url(${props => props.back});
 background-size:cover;
 background-position-x:90%;
+@media(max-width: 320px) {
+  height:700vh;
+  width:100vw;
+  
+
+}
 `
 const Header =styled.section`
 width:100%;
@@ -25,13 +30,23 @@ justify-content:center;
 const H1=styled.h1`
 font-size:2vw;
 font-weight:bolder;
+@media(max-width: 320px) {
+  font-size:9vw;
+}
+@media(max-width: 1024px) {
+  font-size:6vw;
+}
 `
 const Container =styled.section`
 width:90%;
-height:180vh;
 display:flex;
 justify-content:space-evenly;
 flex-wrap:wrap;
+@media(max-width: 320px) {
+  display:flex;
+  height:900vh;
+
+}
 `
 const Img =styled.img`
 width:20vw;
@@ -40,6 +55,10 @@ height:37vh;
   border:solid black;
   cursor:pointer;
 }
+@media(max-width: 320px) {
+  width:60vw;
+}
+
 `
 const Item = styled.div`
 width:10vw;
@@ -50,6 +69,11 @@ display:flex;
 justify-content:center;
 align-items:center;
 top:93%;
+@media(max-width: 320px) {
+  border:solid red;
+  position:absolute;
+  top:99%;
+}
 `
 const StyledLink= styled(Link)`
 text-decoration: none;

@@ -10,12 +10,23 @@ height:170vh;
 position:relative;
 background-image: url(${props => props.back});
 background-size:cover;
+@media(max-width: 320px) {
+  height:90vh;
+  
+}
 `
 const Container = styled.section`
 display:flex;
 height:65vh;
 justify-content:space-around;
 align-items:center;
+@media(max-width: 1024px) {
+    display:flex;
+    flex-direction:column;
+  
+    
+  
+}
 
 `
 const Img = styled.img`
@@ -24,11 +35,23 @@ width:40vw;
 const StyleCarousel =styled(Carousel)`
 width:40vw;
 height:62vh;
+@media(max-width: 1024px) {
+  width:100vw;
+  margin-top:5%;
+  height:62vh;
+  
+  
+}
+
 `
 const H1 =styled.h1`
 font-size:3.5vw;
 font-weight:bolder;
 color:white;
+@media(max-width: 320px) {
+  font-size:6vw;
+  margin-top:5%;
+}
 `
 
 const ContainerMusic = styled.section`
@@ -38,6 +61,14 @@ position:absolute;
 width:100%;
 justify-content:space-around;
 align-items:center;
+@media(max-width: 1024px) {
+  display:flex;
+  flex-direction:column-reverse;
+  position:absolute;
+  top:47%;
+  
+
+}
 `
 const Item = styled.div`
 width:10vw;
@@ -48,6 +79,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 top:93%;
+
 `
 const StyledLink= styled(Link)`
 text-decoration: none;
@@ -57,6 +89,10 @@ font-size:1.8vw;
 &:hover{
   color:black;
   transform: rotate(360deg);
+}
+@media(max-width: 1024px) {
+  font-size:3.4vw;
+  
 }
 `
 export default function Work(){
