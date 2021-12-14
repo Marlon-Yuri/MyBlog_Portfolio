@@ -33,7 +33,7 @@ border-style: double;
     width:25vw;
     height:25vh;
 }
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   position:absolute;
   top:80%;
   border:solid white;
@@ -53,7 +53,7 @@ border-right:2px solid rgba(255, 255, 255, .75);
   position:absolute;
   left:15%;
 }
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   width:76vw;
   font-size:5.5vw;
 
@@ -72,7 +72,7 @@ font-style:italic;
   left:15%;
   width:55vw;
 }
-@media(max-width: 320px) { 
+@media(max-width: 600px) { 
   font-size:4vw;
 }
 `
@@ -82,7 +82,7 @@ left:38%;
 top:80%;
 border-radius:50%;
 width:8vw;
-@media(max-width: 320px) { 
+@media(max-width: 600px) { 
   width:15vw;
 }
 

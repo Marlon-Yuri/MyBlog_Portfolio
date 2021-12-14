@@ -70,9 +70,9 @@ justify-content:center;
 align-items:center;
 top:93%;
 @media(max-width: 320px) {
-  border:solid red;
   position:absolute;
-  top:99%;
+  top:98%;
+  left:60%;
 }
 `
 const StyledLink= styled(Link)`
@@ -83,6 +83,9 @@ font-size:1.8vw;
 &:hover{
   color:red;
   transform: rotate(360deg);
+}
+@media(max-width: 320px) {
+  font-size:6vw;
 }
 `
 export default function Gallery(){

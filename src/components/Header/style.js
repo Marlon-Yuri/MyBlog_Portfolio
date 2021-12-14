@@ -32,7 +32,7 @@ width:15vw;
 display:flex;
 justify-content:center;
 align-items:center;
-@media(max-width: 320px) {
+@media(max-width: 600px) {
     display:none
 }
 `
@@ -44,7 +44,7 @@ align-items:center;
 @media(max-width: 768px) {
     width:65vw;
 }
-@media(max-width: 320px) {
+@media(max-width: 600px) {
     width:100%;
     font-size:3vw;
 }

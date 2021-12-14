@@ -11,7 +11,7 @@ border:solid 2px black;
 background-image: url(${props => props.back});
 background-size:cover;
 background-position-y:54%;
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   background-position-y:10%;
   height:40vh;
 
@@ -48,7 +48,7 @@ background-position-x:77%;
   left:10%
   
 }
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   width:32vw;
   height:20vh;
   
@@ -63,7 +63,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 top:93%;
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   position:absolute;
   top:10%;
   
@@ -80,7 +80,7 @@ font-size:1.6vw;
   transform: rotate(360deg);
   
 }
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   font-size:3vw;
   &:hover{
     color:black;
