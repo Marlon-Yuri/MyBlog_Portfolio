@@ -137,9 +137,9 @@ export default function Work(){
          <Container>
            <H1>Programming skills</H1>
           <StyleCarousel>
-            <Img src={kylo.url} alt=''/>
-            <Img src={naruto.url} alt=''/>
-            <Img src={taxi.url} alt=''/>
+          <a href='https://starwarsgamepage.netlify.app/'> <Img src={kylo.url} alt=''/></a>
+          <a href='https://narutosaga.netlify.app/'><Img src={naruto.url} alt=''/></a>
+          <a href='https://taxibook.netlify.app/'> <Img src={taxi.url} alt=''/></a>
           </StyleCarousel>
          </Container>
          <ContainerMusic>

@@ -1,8 +1,37 @@
-.slide{
-    width: 47vw;
-    height: 35vh;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+.H3{
+    font-family: 'Bebas Neue', cursive;
+    color:#CDB38B;
+    font-size: 1.6vw;
+}
+@media(max-width: 600px) {
+    .H3{
+        font-size: 5vw;
+        border-bottom: solid 2px white;
+    }
+   
+  
+}
+.switch{
+    width:4vw;
+    height:5.7vh;
+    margin-left: 90%;
+    bottom:-30%;
+    border-radius:10%;
+    background-color: #BEBEBE;
+}
+@media(max-width: 600px) {
+   .switch{
+    right: 40%;
+    bottom:-25%;
+     
     
-}
-.slide img{
-    width: 25vw;
-}
+   } 
+  }
+

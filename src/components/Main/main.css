@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 
+body{
+    scroll-behavior: smooth;
+}
+
 .Title{
     white-space: nowrap; 
     overflow:hidden;

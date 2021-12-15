@@ -28,9 +28,9 @@ align-items:center;
 justify-content:center;
 `
 const H1=styled.h1`
-font-size:2vw;
+font-size:3vw;
 font-weight:bolder;
-@media(max-width: 320px) {
+@media(max-width: 600px) {
   font-size:9vw;
 }
 @media(max-width: 1024px) {

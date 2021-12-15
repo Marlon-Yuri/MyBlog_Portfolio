@@ -9,6 +9,7 @@ background-image: url(${props => props.back});
 background-size:cover;
 background-position-y:75%;
 display:flex;
+border: solid 4px black;
 justify-content:center;
 align-items:center;
 
@@ -28,7 +29,7 @@ border-style: double;
 
   @media(max-width: 768px) {
     position:absolute;
-    left:72%;
+    left:69%;
     top:67%;
     width:25vw;
     height:25vh;

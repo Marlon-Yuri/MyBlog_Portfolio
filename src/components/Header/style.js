@@ -51,10 +51,15 @@ align-items:center;
 `
 export const Image = styled.img`
 width:2vw;
+@media(max-width: 600px) {
+    width:6vw;
+}
 `
 export const Insta = styled.img`
 width:3vw;
-
+@media(max-width: 600px) {
+    width:9vw;
+}
 `
 export const Arrow = styled.img`
 width:3vw;

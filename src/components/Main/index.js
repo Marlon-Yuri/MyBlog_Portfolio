@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
 import './main.css'
+import { ThemeProvider, CssBaseline, createMuiTheme, Switch } from  '@material-ui/core'
+
 
 export function Main(){
     const data = useStaticQuery(graphql`
@@ -26,6 +28,8 @@ export function Main(){
     const {background, self, console} = data.alldata.mains[0]
     return(
       <div>
+         <ThemeProvider >
+         
         <S.Backg back={background.url}>
           <S.Selfie back={self.url}></S.Selfie>
           <S.Box className='Title'>
@@ -37,7 +41,7 @@ export function Main(){
           <a href='https://jadevscoronga.netlify.app/'><S.Console className='console' src={console.url} alt="console"/> </a>
                
           </S.Backg>
-
+          </ThemeProvider>
        
       </div>
     )
