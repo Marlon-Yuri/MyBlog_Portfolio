@@ -11,7 +11,7 @@ position:relative;
 background-image: url(${props => props.back});
 background-size:cover;
 @media(max-width: 320px) {
-  height:90vh;
+  height:90vh; 
   
 }
 `
