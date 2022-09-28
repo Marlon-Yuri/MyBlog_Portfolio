@@ -35,7 +35,6 @@ width:40vw;
 const StyleCarousel =styled(Carousel)`
 width:47vw;
 height:64.6vh;
-border: solid red;
 @media(max-width: 1024px) {
   width:100vw;
   margin-top:5%;
@@ -150,7 +149,7 @@ export default function Work(){
           <a href='https://starwarsgamepage.netlify.app/'> <Img src={kylo.url} alt=''/></a>
           <a href='https://narutosaga.netlify.app/'><Img src={naruto.url} alt=''/></a>
           <a href='https://infoglobo.netlify.app/'> <Img src={gifglobo.url} alt=''/></a> 
-          <a href='https://app.netlify.com/sites/marlin-cinemateca/overview'> <Img src={cinema.url} alt=''/></a>  
+          <a href='https://marlin-cinemateca.netlify.app/'> <Img src={cinema.url} alt=''/></a>  
           <a href='https://biscoitodasortesincero.netlify.app/'> <Img src={omikuji.url} alt=''/></a>    
           <a href='https://taxibook.netlify.app/'> <Img src={taxi.url} alt=''/></a>
           </StyleCarousel>
