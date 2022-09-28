@@ -8,7 +8,7 @@ margin-top:0.5%;
 display:flex;
 align-items:center;
 justify-content:center;
-backgound-color:#DCDCDC;
+background-color:#DCDCDC;
 
 `
 export const Whats = styled.div`
@@ -42,7 +42,7 @@ justify-content:space-evenly;
 export const Img = styled.img`
 width:3vw;
 @media(max-width: 600px) {
-    width:21vw;
+    width:12vw;
   }
 
 `

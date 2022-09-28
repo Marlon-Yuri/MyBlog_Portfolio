@@ -3,13 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import * as S from './style';
 import './header.css';
 import {Link} from 'gatsby';
-import styled from 'styled-components';
-
-const StyledLink= styled(Link)`
-text-decoration: none;
-color: black;  
-font-weight:bolder;
-`
+ 
 
 export function Header(){
     const data = useStaticQuery(graphql`
@@ -45,9 +39,9 @@ export function Header(){
            <S.Arrow className="arrow" src={logo.url}/>
           </S.Logo>         
           <S.BoxIcon>
-         <StyledLink to='/About'><S.Item> About me</S.Item> </StyledLink>         
-         <StyledLink to='/Gallery' > <S.Item>Gallery</S.Item> </StyledLink>
-         <StyledLink to='/Work' > <S.Item>Work</S.Item> </StyledLink>
+         <Link style={{textDecoration: 'none'}} to='/About'><S.Item> About me</S.Item> </Link>         
+         <Link style={{textDecoration: 'none'}} to='/Gallery' > <S.Item>Gallery</S.Item> </Link>
+         <Link style={{textDecoration: 'none'}} to='/Work' > <S.Item>Work</S.Item> </Link>
          <a href='https://www.instagram.com/marlon_yuri/'><S.Insta src={insta.url}/></a>
          <a href='https://www.linkedin.com/in/marlon-yuri-jesus-97437b207/'><S.Image src={linkedin.url}/></a>
          <a href='https://github.com/Marlon-Yuri'> <S.Image src={git.url}/></a>

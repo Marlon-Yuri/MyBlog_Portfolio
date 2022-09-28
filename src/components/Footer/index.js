@@ -62,8 +62,8 @@ export function Footer(){
          </S.Whats>
          <S.Email>
          <S.Img src ={picture2.url}/>
-         <h3 className ='H3'>marlon.yuri@precisaser.org.br</h3>
          <h3 className ='H3'>marlonyurimi@gmail.com</h3>
+         <h3 className ='H3'>marlon.yuri@precisaser.org</h3>   
          </S.Email>
        </S.ContactBox>
         </S.Container>
