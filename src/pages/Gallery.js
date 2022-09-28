@@ -51,6 +51,7 @@ flex-wrap:wrap;
 const Img =styled.img`
 width:20vw;
 height:37vh;
+object-fit: cover;
 &:hover{
   border:solid black;
   cursor:pointer;
