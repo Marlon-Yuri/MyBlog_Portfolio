@@ -66,10 +66,18 @@ width:3vw;
 `
 export const Item = styled.h2`
 color:black;
+transition: all .2s ease-in-out; 
+font-size: 1.5vw;
+@media(max-width: 768px) {
+    width:100%;
+    font-size: 3.5vw;
+}
 &:hover{
     cursor:pointer;
     color:#4682B4;
-    font-size:1.6vw;
+    transform: scale(0.9);
+    
 }
+
 
 `

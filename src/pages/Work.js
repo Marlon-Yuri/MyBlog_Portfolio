@@ -33,8 +33,9 @@ const Img = styled.img`
 width:40vw;
 `
 const StyleCarousel =styled(Carousel)`
-width:40vw;
-height:62vh;
+width:47vw;
+height:64.6vh;
+border: solid red;
 @media(max-width: 1024px) {
   width:100vw;
   margin-top:5%;
@@ -83,7 +84,7 @@ top:93%;
 `
 const StyledLink= styled(Link)`
 text-decoration: none;
-color: #FFE4B5;  
+color:black;  
 font-weight:bolder;
 font-size:1.8vw;
 &:hover{
@@ -104,6 +105,15 @@ export default function Work(){
               url
             }
             kylo {
+              url
+            }
+            cinema {
+              url
+            }
+            omikuji {
+              url
+            }
+            gifglobo{
               url
             }
             naruto {
@@ -130,15 +140,18 @@ export default function Work(){
     
     `)
 
-    const {background, kylo, naruto, taxi, music, music1, music2, music3, music4 } = data.alldata.works[0]
+    const {background, kylo, naruto, taxi, music, gifglobo, music2, music3, music4, omikuji, cinema } = data.alldata.works[0]
     return(
       <div>
        <Background back={background.url}>
          <Container>
-           <H1>Programming skills</H1>
+           <H1>Click to see the project</H1>
           <StyleCarousel>
           <a href='https://starwarsgamepage.netlify.app/'> <Img src={kylo.url} alt=''/></a>
           <a href='https://narutosaga.netlify.app/'><Img src={naruto.url} alt=''/></a>
+          <a href='https://infoglobo.netlify.app/'> <Img src={gifglobo.url} alt=''/></a> 
+          <a href='https://app.netlify.com/sites/marlin-cinemateca/overview'> <Img src={cinema.url} alt=''/></a>  
+          <a href='https://biscoitodasortesincero.netlify.app/'> <Img src={omikuji.url} alt=''/></a>    
           <a href='https://taxibook.netlify.app/'> <Img src={taxi.url} alt=''/></a>
           </StyleCarousel>
          </Container>

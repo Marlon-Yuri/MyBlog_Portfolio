@@ -45,7 +45,7 @@ border-style: double;
 export const Box = styled.div`
 color:rgba(255, 255, 255, .75);
 font-family:monospace;
-font-size:3em;
+font-size:2.5vw;
 position:absolute;
 left:40%;
 top:30%;
@@ -63,6 +63,7 @@ border-right:2px solid rgba(255, 255, 255, .75);
 `
 export const Subtitle = styled.div`
 color: white;
+font-size: 1vw;
 position:absolute;
 left:40%;
 top:50%;
